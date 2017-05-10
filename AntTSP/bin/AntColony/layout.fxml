@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="549.0" style="-fx-background-color: #CC6666;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AntColony.Ant_Colony">
+   <children>
+      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="356.0" prefWidth="520.0">
+         <children>
+            <Label fx:id="alfa" text="ALFA">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="beta" text="BETA" GridPane.rowIndex="1">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="Q" GridPane.rowIndex="2">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="id_alfa" GridPane.columnIndex="1" />
+            <TextField fx:id="id_beta" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="id_q" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="FEROMON" GridPane.rowIndex="3">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="BUHARLAŞMA" GridPane.rowIndex="4">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="KARINCA SAYISI" GridPane.rowIndex="5">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="id_feromon" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="id_buharlasma" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="id_karincasayisi" GridPane.columnIndex="1" GridPane.rowIndex="5" />            
+            <Label text="İTERASYON SAYISI" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id_iterasyonSayisi" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="EN İYİ YOL UZUNLUĞU" GridPane.rowIndex="7">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="id_eniyiuzunluk" GridPane.columnIndex="1" GridPane.rowIndex="7" />            
+            <Label text="EN İYİ TUR" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id_eniyitur" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="198.0" layoutY="386.0" mnemonicParsing="false" onAction="#baslat" prefHeight="63.0" prefWidth="145.0" text="BAŞLAT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</Pane>
